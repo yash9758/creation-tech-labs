@@ -3,90 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Ledger Book</title>
+    <title>Privacy Policy - Ledger Book | Creation Tech Labs</title>
     <style>
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
-            padding: 24px;
+            padding: 24px 16px;
             background-color: #f9fafb;
         }
         .container {
             background: #ffffff;
-            padding: 36px;
+            padding: 32px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e5e7eb;
         }
-        h1 { color: #0B192C; font-size: 28px; margin-bottom: 8px; }
-        h2 { color: #1E3E62; font-size: 20px; margin-top: 28px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }
-        p, li { font-size: 15px; color: #4b5563; }
+        .back-nav {
+            margin-bottom: 20px;
+        }
+        .back-nav a {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #0B192C;
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: #f3f4f6;
+        }
+        .back-nav a:hover {
+            background: #e5e7eb;
+        }
+        h1 { color: #0B192C; font-size: 26px; margin: 0 0 8px; }
+        h2 { color: #1E3E62; font-size: 18px; margin-top: 26px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
+        p, li { font-size: 14px; color: #4b5563; }
         ul { padding-left: 20px; }
         .highlight {
             background: #eff6ff;
             border-left: 4px solid #0B192C;
             padding: 12px 16px;
             margin: 16px 0;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 6px 6px 0;
         }
         a { color: #2563eb; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .footer { margin-top: 40px; font-size: 13px; color: #9ca3af; text-align: center; }
+        .footer { margin-top: 36px; font-size: 13px; color: #9ca3af; text-align: center; }
     </style>
 </head>
 <body>
 
 <div class="container">
+    <div class="back-nav">
+        <a href="index.html">&larr; Back to Home</a>
+    </div>
+
     <h1>Privacy Policy</h1>
-    <p><strong>App:</strong> Ledger Book (Customer Khata / Ledger Manager)</p>
+    <p><strong>Application:</strong> Ledger Book (Customer Khata / Ledger Manager)</p>
     <p><strong>Effective Date:</strong> October 2026</p>
 
     <div class="highlight">
-        <strong>Core Promise:</strong> Ledger Book is an <strong>offline-first financial record-keeping app</strong>. We do NOT collect, transmit, or store your customer ledger, transactions, or personal notes on any external servers. Your data stays 100% on your device.
+        <strong>Core Commitment:</strong> Ledger Book is an <strong>offline-first financial record-keeping utility</strong>. We do NOT collect, transmit, or store your customer names, balances, or transactions on external servers. All personal records remain stored exclusively on your device.
     </div>
 
     <h2>1. Information Collection and Storage</h2>
-    <p>When you use Ledger Book, all the information you enter (including customer names, phone numbers, transaction amounts, dates, and item descriptions) is stored purely locally on your device using a private SQLite Room database.</p>
+    <p>When you use Ledger Book, all data you enter (customer names, phone numbers, transaction amounts, timestamps, and item notes) is stored strictly in your phone's internal storage via an encrypted/sandboxed SQLite Room database.</p>
     <ul>
-        <li><strong>No Cloud Sync:</strong> We do not operate proprietary servers to store your customer accounts.</li>
-        <li><strong>No Account Creation:</strong> You do not need to log in, register, or provide your phone number/email to use the core features of the app.</li>
+        <li><strong>No Cloud Storage:</strong> We do not operate remote servers to back up or read your financial entries.</li>
+        <li><strong>No Account Registration:</strong> No account signup, email, or identity verification is required.</li>
     </ul>
 
     <h2>2. Third-Party Services & Advertising</h2>
-    <p>The app displays advertisements powered by <strong>Google AdMob</strong> to support maintenance and development. Google AdMob may automatically collect and process certain non-personal device data in accordance with Google's policies.</p>
-    <p>This data may include:</p>
+    <p>The app serves advertisements through <strong>Google AdMob</strong>. Google AdMob may process non-personally identifiable diagnostic and advertising data:</p>
     <ul>
-        <li>IP address and broad geographic location.</li>
-        <li>Device identifiers (Advertising ID, device model, OS version).</li>
-        <li>Ad interaction and performance metrics.</li>
+        <li>Device identifiers (Advertising ID, OS build, device model).</li>
+        <li>Broad location data (country/city level via IP).</li>
+        <li>Ad performance metrics and interactions.</li>
     </ul>
-    <p>To learn more about how Google handles ad data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising & Privacy Policy</a>.</p>
+    <p>For more information on Google's practices, please refer to the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising & Privacy Policy</a>.</p>
 
-    <h2>3. Data Sharing & User Control (WhatsApp / Backups)</h2>
-    <p>The app allows you to share statements via WhatsApp or export backup files. This action is 100% user-initiated via the Android Sharesheet. Ledger Book does not automatically send, share, or read your messages or communications.</p>
+    <h2>3. User-Initiated Data Sharing</h2>
+    <p>Ledger statements and export files shared via WhatsApp or local backup are triggered entirely by explicit user action using the standard Android Sharesheet. The application does not automatically scan, transmit, or monitor your communications.</p>
 
-    <h2>4. App Permissions</h2>
-    <p>The app requests minimal permissions strictly needed for functionality:</p>
+    <h2>4. Application Permissions</h2>
     <ul>
-        <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required solely by Google AdMob to load banner advertisements.</li>
+        <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required exclusively by the Google Mobile Ads (AdMob) SDK to fetch banner ads.</li>
     </ul>
 
-    <h2>5. Data Retention & Deletion</h2>
-    <p>Since your ledger data is stored only on your phone's internal storage:</p>
+    <h2>5. Data Deletion and Retention</h2>
+    <p>You have complete control over your records:</p>
     <ul>
-        <li>You can delete any customer or individual transaction at any time directly within the app.</li>
-        <li>Clearing the app storage or uninstalling the app permanently erases all locally saved records.</li>
+        <li>Individual entries or complete customer accounts can be deleted permanently within the app.</li>
+        <li>Clearing the app storage or uninstalling the app permanently purges all saved database records.</li>
     </ul>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy periodically. Any changes will be posted on this page with an updated effective date.</p>
-
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions or feedback regarding this Privacy Policy, please reach out to us at:</p>
-    <p><strong>Developer / Organization:</strong> Creation Tech Labs<br>
-    <strong>Website:</strong> <a href="https://yash9758.github.io/creation-tech-labs/">https://yash9758.github.io/creation-tech-labs/</a></p>
+    <h2>6. Contact Us</h2>
+    <p><strong>Organization:</strong> Creation Tech Labs<br>
+    <strong>Website:</strong> <a href="index.html">https://yash9758.github.io/creation-tech-labs/</a><br>
+    <strong>Email:</strong> creationtechlabs@gmail.com</p>
 
     <div class="footer">
         &copy; 2026 Creation Tech Labs. All rights reserved.
