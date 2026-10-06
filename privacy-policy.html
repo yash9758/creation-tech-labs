@@ -1,204 +1,97 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Privacy Policy | Creation Tech Labs</title>
-    <meta name="description" content="Privacy Policy for Creation Tech Labs games and applications.">
-
+    <title>Privacy Policy - Ledger Book</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
-            background: #0b0d12;
-            color: #e8eaf0;
-            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+            background-color: #f9fafb;
         }
-
         .container {
-            width: min(100% - 32px, 850px);
-            margin: auto;
-        }
-
-        header {
-            padding: 55px 20px;
-            text-align: center;
-            background:
-                radial-gradient(circle at top, #20264a 0%, #111522 50%, #0b0d12 100%);
-            border-bottom: 1px solid #252936;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: clamp(2rem, 6vw, 3rem);
-        }
-
-        header p {
-            margin: 10px 0 0;
-            color: #aeb3c2;
-        }
-
-        .content {
-            padding: 40px 0;
-        }
-
-        .card {
-            background: #13161e;
-            border: 1px solid #252936;
-            border-radius: 18px;
-            padding: 30px;
-        }
-
-        h2 {
-            margin-top: 30px;
-            color: #ffffff;
-            font-size: 1.3rem;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        p {
-            color: #b8bdc9;
-        }
-
-        a {
-            color: #9da8ff;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 28px;
-            padding: 11px 18px;
-            border-radius: 10px;
             background: #ffffff;
-            color: #111318;
-            text-decoration: none;
-            font-weight: 600;
+            padding: 36px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-
-        footer {
-            padding: 30px 20px;
-            text-align: center;
-            border-top: 1px solid #252936;
-            color: #777d8b;
-            font-size: 14px;
+        h1 { color: #0B192C; font-size: 28px; margin-bottom: 8px; }
+        h2 { color: #1E3E62; font-size: 20px; margin-top: 28px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }
+        p, li { font-size: 15px; color: #4b5563; }
+        ul { padding-left: 20px; }
+        .highlight {
+            background: #eff6ff;
+            border-left: 4px solid #0B192C;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
         }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 45px 18px;
-            }
-
-            .card {
-                padding: 23px;
-            }
-        }
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer { margin-top: 40px; font-size: 13px; color: #9ca3af; text-align: center; }
     </style>
 </head>
-
 <body>
 
-<header>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Creation Tech Labs</p>
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>App:</strong> Ledger Book (Customer Khata / Ledger Manager)</p>
+    <p><strong>Effective Date:</strong> October 2026</p>
+
+    <div class="highlight">
+        <strong>Core Promise:</strong> Ledger Book is an <strong>offline-first financial record-keeping app</strong>. We do NOT collect, transmit, or store your customer ledger, transactions, or personal notes on any external servers. Your data stays 100% on your device.
     </div>
-</header>
 
-<main class="content">
-    <div class="container">
+    <h2>1. Information Collection and Storage</h2>
+    <p>When you use Ledger Book, all the information you enter (including customer names, phone numbers, transaction amounts, dates, and item descriptions) is stored purely locally on your device using a private SQLite Room database.</p>
+    <ul>
+        <li><strong>No Cloud Sync:</strong> We do not operate proprietary servers to store your customer accounts.</li>
+        <li><strong>No Account Creation:</strong> You do not need to log in, register, or provide your phone number/email to use the core features of the app.</li>
+    </ul>
 
-        <div class="card">
+    <h2>2. Third-Party Services & Advertising</h2>
+    <p>The app displays advertisements powered by <strong>Google AdMob</strong> to support maintenance and development. Google AdMob may automatically collect and process certain non-personal device data in accordance with Google's policies.</p>
+    <p>This data may include:</p>
+    <ul>
+        <li>IP address and broad geographic location.</li>
+        <li>Device identifiers (Advertising ID, device model, OS version).</li>
+        <li>Ad interaction and performance metrics.</li>
+    </ul>
+    <p>To learn more about how Google handles ad data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising & Privacy Policy</a>.</p>
 
-            <h2>Introduction</h2>
+    <h2>3. Data Sharing & User Control (WhatsApp / Backups)</h2>
+    <p>The app allows you to share statements via WhatsApp or export backup files. This action is 100% user-initiated via the Android Sharesheet. Ledger Book does not automatically send, share, or read your messages or communications.</p>
 
-            <p>
-                At Creation Tech Labs, we respect the privacy of our users.
-                This Privacy Policy explains how information may be handled
-                when you use our games and applications.
-            </p>
+    <h2>4. App Permissions</h2>
+    <p>The app requests minimal permissions strictly needed for functionality:</p>
+    <ul>
+        <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required solely by Google AdMob to load banner advertisements.</li>
+    </ul>
 
-            <h2>Information We Collect</h2>
+    <h2>5. Data Retention & Deletion</h2>
+    <p>Since your ledger data is stored only on your phone's internal storage:</p>
+    <ul>
+        <li>You can delete any customer or individual transaction at any time directly within the app.</li>
+        <li>Clearing the app storage or uninstalling the app permanently erases all locally saved records.</li>
+    </ul>
 
-            <p>
-                Our games and applications do not intentionally collect
-                personally identifiable information directly from users
-                unless explicitly stated within the particular application.
-            </p>
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically. Any changes will be posted on this page with an updated effective date.</p>
 
-            <h2>Advertising</h2>
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy, please reach out to us at:</p>
+    <p><strong>Developer / Organization:</strong> Creation Tech Labs<br>
+    <strong>Website:</strong> <a href="https://yash9758.github.io/creation-tech-labs/">https://yash9758.github.io/creation-tech-labs/</a></p>
 
-            <p>
-                Our games may display advertisements provided by third-party
-                advertising services. These services may collect certain
-                information in accordance with their own privacy policies
-                to provide and improve advertising services.
-            </p>
-
-            <h2>Game Data</h2>
-
-            <p>
-                Some games may process information required for game
-                functionality, such as gameplay progress, scores,
-                leaderboards, or similar features.
-            </p>
-
-            <h2>Third-Party Services</h2>
-
-            <p>
-                Our applications may use third-party services for
-                advertising, analytics, distribution, or other functionality.
-                These services may process information according to
-                their respective privacy policies.
-            </p>
-
-            <h2>Children's Privacy</h2>
-
-            <p>
-                We do not knowingly collect personally identifiable
-                information from children through our applications.
-            </p>
-
-            <h2>Changes to This Privacy Policy</h2>
-
-            <p>
-                We may update this Privacy Policy from time to time.
-                Any changes will be reflected on this page.
-            </p>
-
-            <h2>Contact Us</h2>
-
-            <p>
-                If you have any questions or concerns regarding this
-                Privacy Policy, you can contact us at:
-            </p>
-
-            <p>
-                <strong>creationtechlabs@gmail.com</strong>
-            </p>
-
-            <a class="back" href="index.html">
-                ← Back to Home
-            </a>
-
-        </div>
-
+    <div class="footer">
+        &copy; 2026 Creation Tech Labs. All rights reserved.
     </div>
-</main>
-
-<footer>
-    © 2026 Creation Tech Labs. All rights reserved.
-</footer>
+</div>
 
 </body>
 </html>
-```
